@@ -4,4 +4,6 @@ body {
   height: 100%;
   margin: 0;
   background-image: linear-gradient(to top, black, lightblue);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
