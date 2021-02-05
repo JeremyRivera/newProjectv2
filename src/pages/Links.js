@@ -1,7 +1,8 @@
 import React from "react";
+import LinkList from "../components/LinkList/index";
 
 const Links = () => {
-  return <div>Links</div>;
+  return <LinkList />;
 };
 
 export default Links;

@@ -13,7 +13,7 @@ const App = () => {
   return (
     <Router>
       <main>
-        <MainNav text="Jeremy Rivera" />
+        <MainNav text="Welcome to my links!" />
         <Switch>
           <Route path="/" exact>
             <Links />

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import { Navbar, Nav } from "react-bootstrap";
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 import { Link } from 'react-router-dom';
@@ -9,19 +9,19 @@ const MainNav = (props) => {
     const path = window.location.pathname;
     useEffect(() => {
         switch (path) {
-            case "/about":
+            case "/About":
                 setCurrentKey(3)
                 break;
-            case "/projects":
+            case "/Projects":
                 setCurrentKey(2)
                 break;
             default:
                 setCurrentKey(1)
                 break;
         }
-    }, [path])
+    }, [path]);
     return (
-        <Navbar bg="dark" variant="dark" style={{ padding: '10px', marginBottom: '20px' }}>
+        <Navbar bg="black" variant="dark" style={{ padding: '10px', marginBottom: '20px' }}>
             <Navbar.Brand className={styles.logofont} as={Link} to="/" onClick={() => setCurrentKey(1)}>
                 <h4 style={{ margin: '0', }}>{props.text}</h4>
             </Navbar.Brand >
