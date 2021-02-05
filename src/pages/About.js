@@ -26,7 +26,9 @@ const About = () => {
         </h5>
         <Button
           variant="outline-light"
-          href={`${process.env.PUBLIC_URL}resume2020.pdf`}
+          href={
+            "https://docs.google.com/document/d/e/2PACX-1vRfG5YasscyzFs46M9PP9mZdPt31dcF4_8UiwB0GdlqYY500J8EN3B9Vb9lvJ0kLhzBd7SOCE6eTAgu/pub"
+          }
           size="lg"
           download
         >

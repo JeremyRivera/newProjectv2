@@ -13,7 +13,7 @@ const App = () => {
   return (
     <Router>
       <main>
-        <MainNav />
+        <MainNav text="Welcome!" />
         <Switch>
           <Route path="/" exact>
             <Links />
