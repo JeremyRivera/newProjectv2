@@ -3,6 +3,7 @@ import { Navbar, Nav } from "react-bootstrap";
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 import { Link } from 'react-router-dom';
 import styles from "../MainNav/scss.module.scss";
+import Server from "../Server";
 
 const MainNav = (props) => {
     const [currentKey, setCurrentKey] = useState(1);
@@ -23,7 +24,7 @@ const MainNav = (props) => {
     return (
         <Navbar bg="black" variant="dark" style={{ padding: '10px', marginBottom: '20px' }}>
             <Navbar.Brand className={styles.logofont} as={Link} to="/" onClick={() => setCurrentKey(1)}>
-                <h4 style={{ margin: '0', }}>{props.text}</h4>
+                <h4 style={{ margin: '0', }}><Server /></h4>
             </Navbar.Brand >
             <NavbarCollapse className="justify-content-end">
                 <Nav className="justify-content-end" activeKey={currentKey} onSelect={(selectedKey) => { setCurrentKey(selectedKey) }}>
