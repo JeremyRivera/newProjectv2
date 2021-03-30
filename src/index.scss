@@ -3,7 +3,11 @@
 body {
   height: 100%;
   margin: 0;
-  background-image: linear-gradient(to top, rgba(191, 191, 191, 75), black);
+  background-image: linear-gradient(
+    to top,
+    rgba(191, 191, 191, 75),
+    rgb(58, 135, 177)
+  );
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

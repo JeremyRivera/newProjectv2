@@ -11,6 +11,13 @@ const ProjectList = () => {
             description: "The music player was a project done on my free time for fun to mess around with using audio files as well as styling a slider for brushing through music."
         },
         {
+            name: "GamerBase - UI React Personal Page",
+            url: "https://gamerbase-cc8c3.web.app/",
+            github: "https://github.com/JeremyRivera/GameAPI-Redux-thunk-axios",
+            languages: "ReactJS, SCSS, FireBase, Redux",
+            description: "GamerBase is hitting rawg.io api to get all of the games data."
+        },
+        {
             name: "Sidecard - Internal Application",
             url: "",
             github: "https://github.com/jonotann/sidecards",
@@ -37,6 +44,13 @@ const ProjectList = () => {
             github: "https://github.com/JeremyRivera?tab=stars",
             languages: "Spline",
             description: "3D Tool for Designers, made a 3D object hit the link to check it out!"
+        },
+        {
+            name: "Name it",
+            url: "https://jeremyrivera.github.io/Nameit/",
+            github: "https://github.com/JeremyRivera/Nameit",
+            languages: "ReactJS, CSS github-pages",
+            description: "Name it provides the user with a unique domain name based on randomly generated keywords. Then Redirects the user once the name is selected to check if that domain name is available for purchase!"
         }
     ]
     return (
@@ -44,8 +58,8 @@ const ProjectList = () => {
             <h2 style={{ color: "white" }}>What I've worked on...</h2>
             <div className="container">
                 <div className="row justify-content-center">{
-                    projects.map((project, index) => (
-                        <ProjectCard key={index} url={project.url} name={project.name} github={project.github} description={project.description} languages={project.languages} />
+                    projects.map((project, i) => (
+                        <ProjectCard key={i} url={project.url} name={project.name} github={project.github} description={project.description} languages={project.languages} />
                     ))
                 }</div>
             </div>

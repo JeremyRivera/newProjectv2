@@ -18,11 +18,11 @@ const About = () => {
           <strong>About Me...</strong>
         </h4>
         <h5 className="text-white mb-5 max-button ">
-          I am a resilient hardworker/problem solver, Who does not like to give
-          up when presented with a challenge! Working for a small startup called
-          Electus media as a front-end Developer! My Hobbies include watching
-          anything "Tech" related , learing more about code , building Gunpla ,
-          going to the best foodie spots with my fiance, and working out!
+          I am a resilient hard worker/problem solver, Who does not like to give
+          up when presented with a challenge! Currently i'm working as a
+          front-end Developer. My Hobbies include watching anything "Tech"
+          related, learning more about code, building Model kits, and working
+          out!
         </h5>
         <Button
           variant="outline-light"
